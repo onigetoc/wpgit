@@ -1,0 +1,138 @@
+/* @import url('http://fonts.googleapis.com/css?family=Open+Sans'); */
+
+.bootstrap-wrapper {
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.avatar {
+  float: left;
+  margin: 0 10px 10px 0;
+  width: 100px;
+  height: 100px;
+}
+
+.wpgit_description {
+    font-size: 16px;
+    margin-bottom: 5px;
+    height: 44px;
+    overflow: hidden;
+    line-height: 1.4;
+}
+
+#prevnext {
+  clear: both;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#previous,
+#prevnext {
+  display: none;
+}
+
+.bootstrap-wrapper #wpgit_results,
+.bootstrap-wrapper #resultsinfos {
+  color: #545454;
+}
+
+.bootstrap-wrapper #resultsinfos {
+  margin-top: -10px !important;
+}
+
+/*BOOTSTRAP*/
+
+.bootstrap-wrapper .glyphicon {
+  margin-right: 5px;
+}
+
+.bootstrap-wrapper .glyphicon-star {
+  /*color: yellow;*/
+}
+
+.bootstrap-wrapper .section-box h2 {
+  margin-top: 0px;
+}
+
+.bootstrap-wrapper .section-box h2 a {
+  font-size: 15px;
+}
+
+.bootstrap-wrapper .glyphicon-heart {
+  color: #e74c3c;
+}
+
+.bootstrap-wrapper .glyphicon-comment {
+  color: #27ae60;
+}
+
+.bootstrap-wrapper .separator {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.bootstrap-wrapper .section-box hr {
+  margin-top: 0;
+  margin-bottom: 5px;
+  border: 0;
+  border-top: 1px solid rgb(199, 199, 199);
+}
+
+
+/*GC*/
+
+.bootstrap-wrapper img.img-rounded.img-responsive {
+  min-width: 100%;
+}
+
+.bootstrap-wrapper form.well {
+  background-color: #FEFEFE;
+}
+
+.bootstrap-wrapper #wpgit_results .well {
+  margin-bottom: 10px;
+  background-color: #FEFEFE;
+  min-height: 103px;
+}
+
+.bootstrap-wrapper #prevnext.well {
+  background-color: #FEFEFE;
+  padding: 8px;
+}
+
+.bootstrap-wrapper .paddingRight {
+  padding-right: 0;
+}
+
+.bootstrap-wrapper #resultsinfos {
+  color: #888888;
+}
+
+.bootstrap-wrapper form#gitsearch {
+  padding: 10px;
+}
+
+.bootstrap-wrapper #pagination {
+  text-align: center;
+}
+
+.bootstrap-wrapper .wpgit_description:hover {
+    /*height: initial;*/
+}
+.bootstrap-wrapper .wpgit_name {
+    font-size: 22px;
+    margin: 0 0 4px 0;
+    text-transform: capitalize;  
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.bootstrap-wrapper h3.wpgit_name {
+    margin-top: 0;
+}
+.bootstrap-wrapper .wpgit_buttons{
+    margin-top: 8px;
+}
+.bootstrap-wrapper .wpgit_details {
+    line-height: 20px;
+}
