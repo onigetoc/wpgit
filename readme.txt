@@ -1,13 +1,12 @@
 === WPGIT ===
 Contributors: onigetoc
 Donate link: http://wpgit.org
-Tags: plugin, parse
+Tags: plugins, themes, widget, Github, 
 Requires at least: 3.0
 Tested up to: 4.5
 Stable tag: 0.1
 
-Shows any plugin readme.txt file on a page/post.
-'[readme-parser url="http://www.xyz.com/readme.txt"]'
+Wordpress plugin to Search thousands of Wordpress Plugins, Themes and Widgets on Github.
 
 == Description ==
 
