@@ -6,6 +6,8 @@ Description: WPGIT | Search and install Wordpress themes and plugins from Github
 Author: onigetoc
 Version: 0.1
 Author URI: http://www.wpgit.org
+GitHub Plugin URI: https://github.com/onigetoc/wpgit
+GitHub Branch:     master
 */
 
 /* add js and css file to admin plugin */
