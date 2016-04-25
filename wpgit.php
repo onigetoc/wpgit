@@ -21,17 +21,6 @@ function wpgit_admin_scripts() {
     
     /* Add stylesheet CSS */
 	wp_enqueue_style( 'wpgit_CSS', plugins_url('admin/css/style.css', __FILE__) );
-	
-	/* Add js file */
-	//wp_enqueue_script( 'wpgit_JS', plugin_dir_url( __FILE__ ) . 'admin/js/scripts.js' );
-	
-    /* Add bootstrap js */
-    /*
-   	wp_enqueue_script(
-   		'bootstrap_JS', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js', 
-   		array('jquery')
-   	);    
-    */
     
 	/* Add js file who need jQuery to work */
 	wp_enqueue_script(
