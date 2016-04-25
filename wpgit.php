@@ -36,41 +36,6 @@ add_action( 'admin_enqueue_scripts', 'wpgit_admin_scripts' );
 function wpgit_settings()
 {
 
-    // this is where we'll display our admin options
-    if ( isset($_POST['action']) == 'update')
-    {
-        //$wpgit_external = $_POST['wpgit_external'];
-        //update_option('wpgit_external', $wpgit_external);
-
-        $message = '<div id="message" class="updated fade"><p><strong>Options Saved</strong></p></div>';
-
-    }
-
-    if ( isset($_POST['wpgit_options'] )) {
-        $wpgit_options = serialize($_POST['wpgit_options']);
-        update_option('wpgit_options', $wpgit_options);
-    }
-
-    if ( isset($_POST['radio_list'] )) {
-        if($_POST['radio_list'] !== '') {
-            include( plugin_dir_path( __FILE__ ) . 'parse_radionomy.php');
-        }
-    }
-
-    /* Retrieve options */
-    $wpgit_options_get = unserialize( get_option('wpgit_options') );
-
-
-    if($wpgit_options_get){
-        $wpgit_option1 = $wpgit_options_get['option1'];
-        $wpgit_option2 = $wpgit_options_get['option2'];
-
-    }else{
-        $wpgit_option1 = 'my option 1';
-        $wpgit_option2 = 'my option 2';
-    }
-
-
     /* Get Paths */
     $plugin_dir = plugins_url();
     $plugin_url = plugins_url( '' , __FILE__ ).'/';
@@ -86,9 +51,6 @@ function wpgit_settings()
     add_thickbox();
     
     ?>
-
-
-
 
     <!--- Bootstrap --->
     <div class="bootstrap-wrapper wrap">
@@ -153,25 +115,6 @@ function wpgit_settings()
     </div>
     <!--Wrap end -->
     <!--End basic Table -->
-    <script type="text/javascript">
-        var plugin_url = "<?php echo $plugin_url ; ?>";
-
-        /* jquery function to add to admin */
-        jQuery(function($) {
-
-            // jquery function to add to admin
-
-        });
-
-        /* jquery ready function to add to admin */
-        jQuery(document).ready(function($) {
-
-            // jquery ready function to add to admin
-
-        });
-        // Ready end
-
-    </script>
 
     <style>
         /* plugin style admin */
