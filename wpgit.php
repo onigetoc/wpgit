@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: WPGIT
-Plugin URI: http://www.wordpress.com/wordpress-plugins/wpgit
+Plugin URI: https://github.com/onigetoc/wpgit
 Description: WPGIT | Search and install Wordpress themes and plugins from Github:
 Author: onigetoc
 Version: 0.1
@@ -213,7 +213,7 @@ function wpgit_adminbar($links){
 
     $wpgit_link = 'http://mywebsite.com';
 
-    $new_links[] = '<a href="'.$adminlink.'options-general.php?page=wpgit.php">Settings</a>';
+    $new_links[] = '<a href="'.$adminlink.'options-general.php?page=wpgit.php">Search</a>';
 
     return array_merge($links,$new_links );
 
