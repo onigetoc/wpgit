@@ -145,7 +145,7 @@ function wpgit_adminbar($links){
 
     $adminlink = get_bloginfo('wpurl').'/wp-admin/';
 
-    $wpgit_link = 'http://mywebsite.com';
+    $wpgit_link = 'http://wpgit.org';
 
     $new_links[] = '<a href="'.$adminlink.'options-general.php?page=wpgit.php">Search</a>';
 
