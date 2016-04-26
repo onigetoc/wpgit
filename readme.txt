@@ -12,6 +12,9 @@ Wordpress plugin to Search thousands of Wordpress Plugins, Themes and Widgets on
 
 WPGIT is a Wordpress plugin to Search thousands of Wordpress Plugins, Themes and Widgets on Github from your Wordpress admin area (Direct install comming soon).
 
+**Demo Video**
+[youtube https://www.youtube.com/watch?v=EyC_8cHbYRo]
+
 == Installation ==
 
 1. unzip plugin directory into the '/wp-content/plugins/' directory
