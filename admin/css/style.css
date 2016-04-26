@@ -126,6 +126,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    line-height: 27px;
 }
 .bootstrap-wrapper h3.wpgit_name {
     margin-top: 0;

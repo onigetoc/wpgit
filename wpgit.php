@@ -103,7 +103,9 @@ function wpgit_settings()
     </div>
     <!--Wrap end -->
     <!--End basic Table -->
-
+    <script type="text/javascript">
+        var plugin_url = "<?php echo $plugin_url ; ?>";
+    </script>
     <style>
         /* plugin style admin */
         
