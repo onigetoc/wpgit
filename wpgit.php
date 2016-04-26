@@ -72,18 +72,6 @@ function wpgit_settings()
                     <option value="+wordpress+widget+in:name,readme,description">Widget</option>
                 </select>
 
-                <!--
-<span class="radio radio-primary">
-           <input type="radio" name="radio1" id="radio1" value="Themes" checked>
-            <label class="" for="radio1">Themes</label>
-            </span>
-
-<span class="radio radio-primary">
-            <input type="radio" name="radio1" id="radio2" value="Plugins">
-            <label class="" for="radio2">Plugins</label>          
-          </span>
--->
-
                 <button class="btn btn-primary" type="submit">Search</button>
                 <hr>
                 <div id="resultsinfos">
