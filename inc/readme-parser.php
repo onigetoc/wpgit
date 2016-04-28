@@ -1,4 +1,4 @@
-<?php
+<?php 
 define('__ROOT__', dirname(dirname(__FILE__)));
 // WP readme parser
 require_once(__ROOT__ . '/inc/wp_readme-parser.php');
@@ -64,7 +64,35 @@ require_once(__ROOT__ . '/inc/markdown.php');
     
     echo "<div class='pull-right' ><a href='https:github.com/$githubfolder' class='btn btn-default wpgit_install' role='button'' target='_blank'><i class='glyphicon glyphicon-eye-open'></i> View on Github</a>";
     echo " <a href='#' class='btn btn-primary wpgit_install' role='button'' target='_blank'><i class='glyphicon glyphicon-download'></i> Install</a></div>";
-    
+   
+            
+// http://stackoverflow.com/questions/1840942/getting-theme-information-from-the-style-css-file-in-wordpress            
+function theme_infos($githubfolder,$branch){   
+    $style_exist = false ;
+    echo $theme_style = "https://raw.githubusercontent.com/$githubfolder/".$branch."/style.css";
+
+    //$file = file('your file location');
+    $style_exist = wpgit_check_header($theme_style);
+
+    if($style_exist) {
+
+        echo '$style_exist';
+        
+        $style_contents = @file_get_contents($readme_file);
+        
+        $file = file('your file location');
+        
+        $contents = '';
+        foreach($theme_style as $lines => $line){
+        $contents .= $line;
+        }
+        preg_match('!/\*[^*]*\*+([^/][^*]*\*+)*/!', $contents, $style_contents);
+        echo nl2br($themeinfo[0]);
+
+    }
+}
+            
+            
     
     $readme_ext = array("readme.txt", "README.md", "readme.md", "README", "Readme.md", "README.txt", "readme.html");
     
@@ -79,6 +107,8 @@ require_once(__ROOT__ . '/inc/markdown.php');
             $file_exist = wpgit_check_header($readme_file);
             
             if($file_exist) {
+                
+                //theme_infos($githubfolder,$branch);
         
                 echo "Readme Wordpress File | ".$ext;
                 
@@ -94,6 +124,8 @@ require_once(__ROOT__ . '/inc/markdown.php');
             $file_exist = wpgit_check_header($readme_file);
             
             if($file_exist) {
+                
+                //theme_infos($githubfolder,$branch);
                 
                 echo "Readme Github File | ".$ext;
                 
